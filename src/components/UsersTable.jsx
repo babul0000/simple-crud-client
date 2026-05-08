@@ -31,7 +31,7 @@ const UsersTable = ({ users, deleteUserAction }) => {
                             <Link href={`/users/${user._id}`}>
                                 <Button size="sm" variant="flat" className="min-w-[70px]">Details</Button>
                             </Link>
-                            <Link href={`/users/${user._id}`}>
+                            <Link href={`/users/${user._id}/edit`}>
                                 <Button size="sm" color="primary" variant="flat" className="min-w-[70px]">Edit</Button>
                             </Link>
 

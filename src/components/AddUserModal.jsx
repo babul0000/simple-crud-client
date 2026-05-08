@@ -16,6 +16,7 @@ const AddUserModal = ({ createUserAction }) => {
                         </Modal.Header>
                         <Modal.Body className="p-6">
                             <Surface variant="default">
+                                
                                 <form action={createUserAction} className="flex flex-col gap-4">
                                     <TextField className="w-full" name="name" type="text">
                                         <Label>Name</Label>
