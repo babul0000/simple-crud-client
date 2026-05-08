@@ -1,13 +1,13 @@
 'use client'
-import { deleteUser } from "@/app/lib/actions";
+
 import { AlertDialog, Button } from "@heroui/react";
 import Link from "next/link";
 
-const UsersTable = ({ users }) => {
+const UsersTable = ({ users, deleteUserAction }) => {
     if (!users || users.length === 0) return <p className="text-center p-5">No users found.</p>;
 
     const handleDelete = async(userId) => {
-    await deleteUser(userId)
+    await deleteUserAction(userId)
     }
 
     return (

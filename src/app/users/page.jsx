@@ -1,5 +1,6 @@
 import UsersTable from "@/components/UsersTable";
 import { getUsers } from "../lib/data";
+import { deleteUser } from "../lib/actions";
 
 
 const UserPage = async() => {
@@ -10,7 +11,7 @@ const UserPage = async() => {
         <div>
             <h1>users management: {users.length}</h1>
             <div>
-                <UsersTable users={users}></UsersTable>
+                <UsersTable users={users} deleteUserAction={deleteUser}></UsersTable>
             </div>
         </div>
     );
